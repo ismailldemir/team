@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xander Css</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="kor.css" />
+  </head>
+  <body>
+    
+    <audio id="aaaa" src="dota2.mp3" loop="loop" autoplay></audio>
+  <header>
+    <h1>
+      <a href="https://steamcommunity.com/id/jrxander/">XanderKorchi</a>
+    </h1>
+    <audio id="jgrmp3" src="juga.mp3"></audio>
+    <audio id="mrsmp3" src="marsq.mp3">
+    <audio id="invmp3" src="invoker.mp3"></audio>
+    <audio id="axmp3" src="axe.mp3"></audio>
+    <audio id="jkrmp3" src="jakiro.mp3"></audio>
+    <audio id="wntrmp3" src="winter.mp3"></audio>
+    <audio id="rshnmp3" src="roshan.mp3"></audio>
+    
+
+    
+    
+    </header>
+    <nav>
+      <a href="#">Ana Sayfa</a>
+      <a href="#">Kariyer</a>
+      <a href="#">Hakkımda</a>
+    </nav>
+    <main>
+      <h2>Dota Kariyeri</h2>
+      <article>
+        <p>
+          Dota Kariyerim boyunca bir çok rakiple mücadele etmek zorunda kaldım
+          ve bunların çoğunluğu yabancı oyunculardı.Türk oyuncuların yanı sıra
+          yabancı oyuncularla rekabet halinde olmak bana inanılmaz haz ve zevk
+          verirdi. Özellikle kazandıktan sonra bütün dert ve sıkıntılarım anlık
+          olarak biterdi.Bu yüzden Dota 2 hayatımda yaklaşık 10 yıldır
+          var.Eskiden çok rekabetçi bir insan olsamda zamana sanırım yenik düşüp
+          artık sadece arkadaşlarla keyif almak için oynadığımı kendime itiraf
+          edebildiğim bir yazı oldu bu.Umarım sitemizde gezinirken keyif
+          alırsınız.
+        </p>
+      </article>
+      </div>
+      <img
+        onclick="change_hero()"
+        id="dthero"
+        src="juggernaut-removebg-preview.png"
+        alt=""
+        class="dtheroes"
+        style="z-index: 1"
+      
+      />
+      <img
+        class="dtheroes"
+        style="left: 300px"
+        src="mars-removebg-preview.png"
+        alt=""
+        id="mrs"
+        onclick="mrs_music()"
+      />
+      <img
+      class="dtheroes"
+      src="winter.png"
+      alt=""
+      id="wntr"
+      onclick="wntr_music()"
+    />
+    
+      <img
+      id="ax"
+      onclick="ax_music()"
+       src="axe-removebg-preview.png" alt="">
+      
+      <img
+      onclick="rshn_music()"
+      id="rshn"
+       src="image-removebg-preview.png" alt="">
+      <img
+        class="dtheroes2"
+        id="invkr"
+        src="invokera.png"
+        alt=""
+        onclick="change_invkr()"
+      />
+      <img 
+      onclick="jkr_music()"
+      class="dtheroes2"
+      style="bottom:280px; width:500px;height:250px;right: 550px;"
+      id="jkr"
+      src="jakiro-removebg-preview.png" alt="">
+
+      <script>
+        let juggernaut = document.getElementById("dthero").src;
+        let invoker = document.getElementById("invkr").src;
+        function change_hero() {
+          if (document.getElementById("dthero").src === juggernaut) {
+            document.getElementById("dthero").src =
+              "JUGGER2.png";
+          } else {
+            document.getElementById("dthero").src = juggernaut;
+          }
+          document.getElementById("jgrmp3").play();
+        }
+
+        function mrs_music() {
+          document.getElementById("mrsmp3").play();
+        }
+      
+        function change_invkr() {
+          if (document.getElementById("invkr").src === invoker) {
+            document.getElementById("invkr").src =
+              "realvoker.png";
+          } else {
+            document.getElementById("invkr").src = invoker;
+          }
+          document.getElementById("invmp3").play();
+        }
+
+        var start = document.getElementById("aaaa");
+      function music_start() {
+        start.play();
+      }
+      function ax_music() {
+        document.getElementById("axmp3").play();
+        
+      }
+      function jkr_music() {
+        document.getElementById("jkrmp3").play();
+        
+      }
+      function wntr_music() {
+        document.getElementById("wntrmp3").play();
+       
+        }
+        function rshn_music() {
+          document.getElementById("rshnmp3").play();
+          
+        }
+        
+      
+          
+      </script>
+     
+  </main>
+
+  </body>
+</html>
